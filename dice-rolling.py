@@ -6,7 +6,6 @@ print('\033[34mBem vindo ao randomizador de lados do dado!\033[m')
 lados = [1,2,3,4,5,6]
 
 placar = []
-soma = 0
 
 while len(placar) <= 5:
 
@@ -18,11 +17,10 @@ while len(placar) <= 5:
 
     print(f'Você tirou o número {lado_random}!')
     print('Valor adicionado á sua tabela.')
-    soma += lado_random
     placar.append(lado_random)
 
 print(f'Seu placar foi : {placar}')
-print(f'A soma total dos seus pontos é {soma}')
+print(f'A soma total dos seus pontos é {sum(placar)}')
 
 
 
